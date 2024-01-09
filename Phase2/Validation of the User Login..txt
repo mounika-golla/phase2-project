@@ -1,0 +1,41 @@
+Validation of the User Login.
+
+Project Structure:
+
+Creating a simple project structure with the following directories:
+
+/your-web-app
+    /WEB-INF
+        /classes
+        /lib
+    /META-INF
+    /WEB-INF
+        web.xml
+Dependencies:
+
+Download  the necessary JAR files (Servlet API and JSP API) in the /WEB-INF/lib directory.
+
+web.xml:
+
+Configure the web.xml file in the /WEB-INF directory to define servlets and mappings.
+Login JSP:
+
+Creating a login page that takes input for username and password.
+
+Login Servlet:
+
+Implementing the servlet to handle login validation.
+Dashboard JSP:
+
+Creating a dashboard page with a logout link.
+Error JSP:
+
+Creating an error page for incorrect logins.
+
+Logout Servlet:
+
+Creating a servlet to handle logout.
+
+Git Hub:
+
+https://github.com/mounika-golla/phase2-project.git
