@@ -1,22 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
-  <display-name>product</display-name>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" 
+id="WebApp_ID" version="5.0">
+  <display-name>RailwayCrossApp</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
+    <welcome-file>homepage.jsp</welcome-file>
+    
   </welcome-file-list>
   <servlet>
-    <description></description>
-    <display-name>Product</display-name>
-    <servlet-name>Product</servlet-name>
-    <servlet-class>com.productservlet.Product</servlet-class>
+    <servlet-name>Registerservlet</servlet-name>
+    <servlet-class>pack1.Registerservlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Product</servlet-name>
-    <url-pattern>/Product</url-pattern>
+    <servlet-name>Registerservlet</servlet-name>
+    <url-pattern>/Registerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginSevlet</servlet-name>
+    <servlet-class>pack1.LoginSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginSevlet</servlet-name>
+    <url-pattern>/LoginSevlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>AddFavouriteServlet</servlet-name>
+    <servlet-class>pack1.AddFavouriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddFavouriteServlet</servlet-name>
+    <url-pattern>/AddFavouriteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>RemoveFavouriteServlet</servlet-name>
+    <servlet-class>pack1.RemoveFavouriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveFavouriteServlet</servlet-name>
+    <url-pattern>/RemoveFavouriteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>Adminloginpage</servlet-name>
+    <servlet-class>pack1.Adminloginpage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adminloginpage</servlet-name>
+    <url-pattern>/Adminloginpage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>Adminhomepage</servlet-name>
+    <servlet-class>pack1.Adminhomepage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Adminhomepage</servlet-name>
+    <url-pattern>/Adminhomepage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+   
+    <servlet-name>AddCrossing</servlet-name>
+    <servlet-class>pack1.AddCrossing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCrossing</servlet-name>
+    <url-pattern>/AddCrossing</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>UpdateCrossing</servlet-name>
+    <servlet-class>pack1.UpdateCrossing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCrossing</servlet-name>
+    <url-pattern>/UpdateCrossing</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>SearchCrossing</servlet-name>
+    <servlet-class>pack1.SearchCrossing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchCrossing</servlet-name>
+    <url-pattern>/SearchCrossing</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    
+    <servlet-name>DeleteCrossing</servlet-name>
+    <servlet-class>pack1.DeleteCrossing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCrossing</servlet-name>
+    <url-pattern>/DeleteCrossing</url-pattern>
   </servlet-mapping>
 </web-app>
